@@ -6,6 +6,7 @@ RSpec.describe FindTheEnd do
   end
 
   it 'does something useful' do
-    expect(false).to eq(true)
+    test1 = false
+    expect(test1).to eq(true)
   end
 end

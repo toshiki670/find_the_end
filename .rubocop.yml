@@ -3,9 +3,9 @@ AllCops:
   NewCops: enable
 
 require:
+  - rubocop-performance
   - rubocop-rake
   - rubocop-rspec
-  - rubocop-performance
 
 Performance:
   Enabled: true

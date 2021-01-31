@@ -1,3 +1,6 @@
+<a href="LICENSE" alt="MIT License"><img alt="GitHub" src="https://img.shields.io/github/license/toshiki670/find_the_end?style=flat-square"></a>
+<a href="https://github.com/toshiki670/find_the_end/actions" alt="Check action"><img alt="GitHub" src="https://img.shields.io/github/workflow/status/toshiki670/find_the_end/Ruby?label=Ruby&style=flat-square"></a>
+
 # FindTheEnd
 
 ## Installation

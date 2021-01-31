@@ -16,7 +16,7 @@ Gem::Specification.new do |spec|
 
   spec.homepage      = "https://github.com/toshiki670/find_the_end"
   spec.license       = "MIT"
-  spec.required_ruby_version = Gem::Requirement.new(">= 2.4.0")
+  spec.required_ruby_version = Gem::Requirement.new(">= 3.0.0")
 
   spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
 

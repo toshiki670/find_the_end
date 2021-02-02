@@ -15,3 +15,18 @@ Security:
 
 Layout/LineLength:
   Max: 120
+
+Metrics/BlockLength:
+  CountComments: false
+  Exclude:
+    - 'spec/**/*.rb'
+    - '**/*.gemspec'
+
+Metrics/ClassLength:
+  CountComments: false
+
+Metrics/MethodLength:
+  CountComments: false
+
+Metrics/ModuleLength:
+  CountComments: false

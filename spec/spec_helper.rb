@@ -12,4 +12,10 @@ RSpec.configure do |config|
   config.expect_with :rspec do |c|
     c.syntax = :expect
   end
+
+  RSpec::Matchers.define :be_numeric do
+    match do |actual|
+      actual.match?(/\A\d+\Z/)
+    end
+  end
 end

@@ -2,7 +2,7 @@
 
 module FindTheEnd
   # A point representing a coordinate.
-  class Point
+  class Coordinates
     attr_reader :x, :y
 
     def initialize(**params)

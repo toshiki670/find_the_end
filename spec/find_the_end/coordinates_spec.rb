@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.describe FindTheEnd::Point do
+RSpec.describe FindTheEnd::Coordinates do
   let(:instance) { described_class.new(x: x_point, y: y_point) }
 
   describe '#x' do

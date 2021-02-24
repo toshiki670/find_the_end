@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module FindTheEnd
-  # A point representing a coordinate.
+  # X and Y representing a coordinate.
   class Coordinates
     attr_reader :x, :y
 

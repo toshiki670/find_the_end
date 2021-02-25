@@ -2,6 +2,8 @@
 
 module FindTheEnd
   # Linear equation.
+  # TODO: Wheter to implement distance
+  # Math.sqrt((x2−x1)^2+(y2−y1)^2)
   class Linear
     attr_reader :slope, :intercept
 

@@ -6,8 +6,8 @@ module FindTheEnd
     attr_reader :x, :y
 
     def initialize(**params)
-      @x = params[:x]
-      @y = params[:y]
+      @x = params[:x].to_f
+      @y = params[:y].to_f
     end
   end
 end

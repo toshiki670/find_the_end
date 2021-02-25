@@ -16,6 +16,10 @@ module FindTheEnd
       self.slope == other.slope && self.intercept == other.intercept
     end
 
+    def angle
+      Math.atan(@slope) * 180 / Math::PI
+    end
+
     def self.from_coordinates(coordinate_p, coordinate_q)
       slope = Rational(coordinate_q.y - coordinate_p.y, coordinate_q.x - coordinate_p.x).to_f
       intercept = Rational(coordinate_q.x * coordinate_p.y - coordinate_p.x * coordinate_q.y, coordinate_q.x - coordinate_p.x).to_f

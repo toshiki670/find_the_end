@@ -49,9 +49,7 @@ RSpec.describe FindTheEnd::Linear do
     context 'when success' do
       let(:coordinate_p) { FindTheEnd::Coordinates.new(x: -4, y: -1) }
       let(:coordinate_q) { FindTheEnd::Coordinates.new(x: 2, y: 2) }
-      let(:slope) { 0.5 }
-      let(:intercept) { 1.0 }
-      let(:expected_result) { described_class.new(slope: slope, intercept: intercept) }
+      let(:expected_result) { described_class.new(slope: 0.5, intercept: 1.0) }
 
       it 'is slope matches.' do
         expect(actual_result.slope).to eq expected_result.slope

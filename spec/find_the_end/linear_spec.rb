@@ -53,7 +53,13 @@ RSpec.describe FindTheEnd::Linear do
       let(:intercept) { 1.0 }
       let(:expected_result) { described_class.new(slope: slope, intercept: intercept) }
 
-      it { is_expected.to eq result }
+      it 'is slope matches.' do
+        expect(actual_result.slope).to eq expected_result.slope
+      end
+
+      it 'is intercept matches.' do
+        expect(actual_result.intercept).to eq expected_result.intercept
+      end
     end
 
     # context 'when failure' do

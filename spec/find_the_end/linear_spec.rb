@@ -44,14 +44,14 @@ RSpec.describe FindTheEnd::Linear do
   end
 
   describe '.from_coordinates' do
-    subject { FindTheEnd::Linear.from_coordinates(coordinate_p, coordinate_q) }
+    let(:actual_result) { described_class.from_coordinates(coordinate_p, coordinate_q) }
 
     context 'when success' do
       let(:coordinate_p) { FindTheEnd::Coordinates.new(x: -4, y: -1) }
       let(:coordinate_q) { FindTheEnd::Coordinates.new(x: 2, y: 2) }
       let(:slope) { 0.5 }
       let(:intercept) { 1.0 }
-      let(:result) { FindTheEnd::Linear.new(slope: slope, intercept: intercept) }
+      let(:expected_result) { described_class.new(slope: slope, intercept: intercept) }
 
       it { is_expected.to eq result }
     end

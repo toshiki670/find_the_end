@@ -9,7 +9,7 @@ RSpec.describe FindTheEnd::Linear do
     context 'when success' do
       let(:slope) { 10 }
       let(:intercept) { 20 }
-      let(:result)  { 10 }
+      let(:result) { 10 }
 
       it { is_expected.to eq result }
     end
@@ -17,7 +17,7 @@ RSpec.describe FindTheEnd::Linear do
     context 'when failure' do
       let(:slope) { 10 }
       let(:intercept) { 20 }
-      let(:result)  { 20 }
+      let(:result) { 20 }
 
       it { is_expected.not_to eq result }
     end
@@ -29,7 +29,7 @@ RSpec.describe FindTheEnd::Linear do
     context 'when success' do
       let(:slope) { 10 }
       let(:intercept) { 20 }
-      let(:result)  { 20 }
+      let(:result) { 20 }
 
       it { is_expected.to eq result }
     end
@@ -37,7 +37,7 @@ RSpec.describe FindTheEnd::Linear do
     context 'when failure' do
       let(:slope) { 10 }
       let(:intercept) { 20 }
-      let(:result)  { 10 }
+      let(:result) { 10 }
 
       it { is_expected.not_to eq result }
     end

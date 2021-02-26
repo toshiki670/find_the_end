@@ -9,7 +9,7 @@ RSpec.describe FindTheEnd::Coordinates do
     context 'when success' do
       let(:x_coordinate) { 10 }
       let(:y_coordinate) { 20 }
-      let(:result)  { 10.0 }
+      let(:result) { 10.0 }
 
       it { is_expected.to eq result }
     end
@@ -17,7 +17,7 @@ RSpec.describe FindTheEnd::Coordinates do
     context 'when failure' do
       let(:x_coordinate) { 10 }
       let(:y_coordinate) { 20 }
-      let(:result)  { 20.0 }
+      let(:result) { 20.0 }
 
       it { is_expected.not_to eq result }
     end
@@ -29,7 +29,7 @@ RSpec.describe FindTheEnd::Coordinates do
     context 'when success' do
       let(:x_coordinate) { 10 }
       let(:y_coordinate) { 20 }
-      let(:result)  { 20.0 }
+      let(:result) { 20.0 }
 
       it { is_expected.to eq result }
     end
@@ -37,7 +37,7 @@ RSpec.describe FindTheEnd::Coordinates do
     context 'when failure' do
       let(:x_coordinate) { 10 }
       let(:y_coordinate) { 20 }
-      let(:result)  { 10.0 }
+      let(:result) { 10.0 }
 
       it { is_expected.not_to eq result }
     end

@@ -12,10 +12,6 @@ module FindTheEnd
       @intercept = params[:intercept].to_f
     end
 
-    def ==(other)
-      @slope == other.slope && @intercept == other.intercept
-    end
-
     def angle
       Math.atan(@slope) * 180 / Math::PI
     end

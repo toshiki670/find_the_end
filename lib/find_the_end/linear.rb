@@ -22,7 +22,10 @@ module FindTheEnd
 
     def self.from_coordinates(coordinate_p, coordinate_q)
       slope = Rational(coordinate_q.y - coordinate_p.y, coordinate_q.x - coordinate_p.x).to_f
-      intercept = Rational(coordinate_q.x * coordinate_p.y - coordinate_p.x * coordinate_q.y, coordinate_q.x - coordinate_p.x).to_f
+      intercept = Rational(
+        coordinate_q.x * coordinate_p.y - coordinate_p.x * coordinate_q.y,
+        coordinate_q.x - coordinate_p.x
+      ).to_f
 
       Linear.new(slope: slope, intercept: intercept)
     end

@@ -16,14 +16,24 @@ module FindTheEnd
       Math.atan(@slope) * 180 / Math::PI
     end
 
-    def self.from_coordinates(coordinate_p, coordinate_q)
-      slope = Rational(coordinate_q.y - coordinate_p.y, coordinate_q.x - coordinate_p.x).to_f
-      intercept = Rational(
-        coordinate_q.x * coordinate_p.y - coordinate_p.x * coordinate_q.y,
-        coordinate_q.x - coordinate_p.x
-      ).to_f
+    class << self
+      def from_coordinates(coordinate_p, coordinate_q)
+        slope = slope_coordinates(coordinate_p, coordinate_q)
+        intercept = intercept_coordinates(coordinate_p, coordinate_q)
 
-      Linear.new(slope: slope, intercept: intercept)
+        Linear.new(slope: slope, intercept: intercept)
+      end
+
+      private
+
+      def slope_coordinates(coordinate_p, coordinate_q)
+        Rational(coordinate_q.y - coordinate_p.y, coordinate_q.x - coordinate_p.x).to_f
+      end
+
+      def intercept_coordinates(coordinate_p, coordinate_q)
+        Rational(coordinate_q.x * coordinate_p.y - coordinate_p.x * coordinate_q.y,
+                 coordinate_q.x - coordinate_p.x).to_f
+      end
     end
   end
 end

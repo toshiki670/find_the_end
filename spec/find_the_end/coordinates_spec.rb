@@ -43,7 +43,21 @@ RSpec.describe FindTheEnd::Coordinates do
     end
   end
 
-  # describe '.intersect_linears' do
-  #   # TODO: ...
-  # end
+  describe '.intersect_linears' do
+    let(:actual_result) { described_class.intersect_linears(linear_p, linear_q) }
+
+    context 'when success' do
+      let(:linear_p) { FindTheEnd::Linear.new(slope: 2, intercept: 4) }
+      let(:linear_q) { FindTheEnd::Linear.new(slope: -2, intercept: 2) }
+      let(:expected_result) { described_class.new(x: -0.5, y: 3) }
+
+      it 'is x_coordinate matches.' do
+        expect(actual_result.x).to eq expected_result.x
+      end
+
+      it 'is y_coordinate matches.' do
+        expect(actual_result.y).to eq expected_result.y
+      end
+    end
+  end
 end

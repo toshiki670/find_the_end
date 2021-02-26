@@ -9,5 +9,12 @@ module FindTheEnd
       @x = params[:x].to_f
       @y = params[:y].to_f
     end
+
+    def self.intersect_linears(linear_p, linear_q)
+      x = Rational(linear_q.intercept - linear_p.intercept, linear_p.slope - linear_q.slope).to_f
+      y = linear_p.slope * x + linear_p.intercept
+
+      Coordinates.new(x: x, y: y)
+    end
   end
 end

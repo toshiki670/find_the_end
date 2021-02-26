@@ -13,7 +13,7 @@ module FindTheEnd
     end
 
     def ==(other)
-      self.slope == other.slope && self.intercept == other.intercept
+      @slope == other.slope && @intercept == other.intercept
     end
 
     def angle
